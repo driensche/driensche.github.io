@@ -90,7 +90,7 @@ a, a:visited {
 a:hover {
 	color: #2a2a2a;
 	text-decoration: none;
-	border-bottom: 1px solid #ff0066;
+	border-bottom: 1px solid #e6e600;
 }
 a:active {
 	border-bottom: 1px solid violet;
@@ -123,7 +123,7 @@ h2 {
 
 p {
 	font-size: 1.375rem;
-	line-height: 1.75rem;
+	line-height: 1.875rem;
 	color: #727272;
 	max-width: 880px;
 	margin: 0 auto 1rem auto;
@@ -154,7 +154,7 @@ Galleries
 .gallery {
 	position: relative;
 	width: 100%;
-	margin: 3rem auto;
+	margin: 4rem auto;
 }
 
 .gallery a, .gallery a:visited {
@@ -185,6 +185,10 @@ Galleries
     margin: 0 1px 1px 0;
 }
 
+#gallery-gamefarm a.featured-gallery-image {
+	width: calc(66.666% - 1px);
+}
+
 /*#gallery-paint a:nth-child(3n) {
     margin-right: 0;
 }*/
@@ -206,7 +210,7 @@ footer {
 }
 
 footer p {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 }
 
 footer p.copyright {
@@ -214,3 +218,28 @@ footer p.copyright {
 }
 
 
+
+/* 
+======================================================
+Media queries
+======================================================
+*/
+
+
+@media (max-width: 768px) {
+
+	#introduction {
+		margin: 4rem auto;
+	}
+
+	#gallery-paint a, #gallery-sketch a, #gallery-commercial a, #gallery-photos a {
+	    width: calc(50% - 1px);
+	    min-height: 280px;
+	}
+
+	#gallery-gamefarm a, #gallery-gamefarm a.featured-gallery-image {
+	    width: calc(50% - 1px);
+	    min-height: 280px;
+	}
+
+}
