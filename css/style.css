@@ -83,16 +83,16 @@ hr {
 
 a, a:visited { -moz-transition: 300ms; transition: 300ms; }
 
-a, a:visited {
+p a, p a:visited {
 	color: #727272;
 	border-bottom: 1px solid #f1f1f1;
 }
-a:hover {
+p a:hover {
 	color: #2a2a2a;
 	text-decoration: none;
 	border-bottom: 1px solid #e6e600;
 }
-a:active {
+p a:active {
 	border-bottom: 1px solid violet;
 	color: violet;
 }
@@ -129,6 +129,12 @@ p {
 	margin: 0 auto 1rem auto;
 }
 
+svg.heart {
+	fill: #727272;
+	position: relative;
+	top: 2px;
+}
+
 /* 
 ======================================================
 Introduction
@@ -160,6 +166,7 @@ Galleries
 
 .gallery a, .gallery a:visited {
 	opacity: 1;
+	background-color: #eee!important;
 }
 .gallery a:hover {
 	opacity: .72;
