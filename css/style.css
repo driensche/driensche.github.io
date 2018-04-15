@@ -243,3 +243,21 @@ Media queries
 	}
 
 }
+
+
+@media (max-width: 450px) {
+
+	#splash {
+		height: 300px;
+	}
+
+	#introduction {
+		margin-top: 1rem;
+	}
+
+	h1 { margin: 2rem 0; }
+
+}
+
+
+
