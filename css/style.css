@@ -1,0 +1,21 @@
+.uk-container {
+	margin-top: 2rem;
+}
+
+hr {
+	margin: 4rem 0;
+}
+
+.uk-grid a img {
+	opacity: 1;
+    -webkit-transition: 500ms; transition: 500ms;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0);
+}
+.uk-grid a img:hover {
+	opacity: .9;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .4);
+}
+
+#footer {
+	margin: 5rem auto;
+}
