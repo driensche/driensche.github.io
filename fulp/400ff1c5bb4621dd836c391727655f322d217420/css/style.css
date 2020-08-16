@@ -1,0 +1,242 @@
+/*
+======================================================
+UNIVERSAL
+======================================================
+*/
+
+body {
+	color: #3D3C3A;
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+}
+
+body#video { background-color: #FCFAF0; }
+body#audio { background-color: #FCFAF0; }
+body#photos { background-color: #FCFAF0; }
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 2.75rem;
+	line-height: 1.3;
+}
+
+h2, h3, h4 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+
+span.date {
+	/* font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; */
+	font-size: 1.25rem;
+	margin-left: 1rem;
+	color: #787672;
+}
+
+p {
+    max-width: 640px;
+		line-height: 1.75rem;
+}
+
+p.uk-text-lead {
+	max-width: 960px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+
+.center-align {
+	text-align: center;
+}
+
+/*
+======================================================
+LINKS & BUTTONS
+======================================================
+*/
+
+a, a:visited { color: salmon; text-decoration: none; border-bottom: 1px solid transparent;
+	-moz-transition: 300ms;
+	transition: 300ms;
+}
+a:hover, a:active { color: salmon; text-decoration: none; border-bottom: 1px solid salmon; }
+.uk-light a, .uk-light a:visited { color: white; }
+
+a.uk-button {
+	color: #3D3C3A;
+  text-transform: none;
+  font-weight: 600;
+	font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 10rem;
+	border: 2px solid #3D3C3A;
+	-moz-transition: 300ms;
+	transition: 300ms;
+}
+
+a.uk-button:hover {
+	border: 2px solid salmon;
+}
+
+
+/*
+======================================================
+LOGO & NAVIGATION
+======================================================
+*/
+
+.uk-navbar-left .uk-logo {
+	font-family: 'Muli', sans-serif;
+	font-weight: 900;
+	letter-spacing: .05rem;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+}
+/* ensure logo is full opacity */
+.uk-light .uk-navbar-left .uk-logo {
+    color: #fff;
+}
+.uk-dark .uk-navbar-left .uk-logo {
+    color: #000;
+}
+
+hr {
+	margin: 4rem 0;
+}
+
+ul.uk-navbar-nav li a {
+	border: 0;
+	font-weight: 600;
+}
+ul.uk-navbar-nav li a:hover, .uk-navbar-left .uk-logo:hover { border: 0; }
+
+nav.uk-light ul.uk-navbar-nav li.current-page a {
+	color: #fff;
+}
+nav.uk-dark ul.uk-navbar-nav li.current-page a {
+	color: #000;
+}
+
+
+/*
+======================================================
+VIDEO
+======================================================
+*/
+
+.video-container {
+	background-color: #3D3C3A;
+	/* background: url('../img/bgnd3.jpg'); */
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*
+======================================================
+SLIDESHOW
+======================================================
+*/
+
+#slideshow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+ul.uk-slideshow-items {
+    height: 100vh!important;
+}
+
+/*prevents navigation from being pushed down on Audio page*/
+.uk-margin-large, .uk-margin-medium {margin-top: 0!important;}
+
+/*photo overlay on audio page*/
+.uk-overlay-primary {
+    background: rgba(34,34,34,.3);
+}
+
+/*
+======================================================
+AUDIO PLAYER
+======================================================
+*/
+
+audio {
+    display: block;
+    position: relative;
+    min-height: 54px;
+    width: 300px;
+		background: #F1F3F4;
+    border-radius: 4px;
+		margin: 2rem 0;
+}
+
+#playlist {
+    padding: 0;
+		margin-bottom: 2rem;
+    margin-left: 1.8rem;
+}
+
+#playlist li {
+    margin: 1rem 0;
+    /* border-top: 1px solid rgba(255, 255, 255, .5); */
+    padding: 0 0 0 .5rem;
+		max-width: 640px;
+}
+
+#playlist li.current-song {
+    list-style-type: none;
+		padding: 0;
+		position: relative;
+		left: -6px;
+}
+
+#playlist li.current-song:before {
+    content: "\25B6";
+    position: relative;
+    left: -1rem;
+}
+
+#playlist li a {
+    color: white;
+    text-decoration: none;
+    opacity: .5;
+    font-size: 1rem;
+    line-height: 2rem;
+	 -moz-transition: 300ms;
+    transition: 300ms;
+}
+
+#playlist li a:hover {
+    opacity: 1;
+}
+
+#playlist .current-song a {
+    opacity: 1;
+}
+
+/*
+======================================================
+IMPORTANT STRUCTURES
+======================================================
+*/
+
+#content {
+	min-height: calc(100vh - 13rem);
+}
+
+footer {
+	position: relative;
+	padding: 2.5rem;
+	margin-top: 5rem;
+	height: 3rem;
+}
+
+footer p {
+	text-align: center;
+	/* font-family: 'Playfair Display', serif; */
+	font-weight: 400;
+	font-size: .9rem;
+	max-width: none;
+}
