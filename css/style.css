@@ -1,242 +1,268 @@
-/*
-======================================================
-UNIVERSAL
-======================================================
-*/
+html {
+	background-color: white;
+}
 
 body {
-	color: #3D3C3A;
-	font-family: 'Muli', sans-serif;
-	font-weight: 400;
-}
-
-body#video { background-color: #FCFAF0; }
-body#audio { background-color: #FCFAF0; }
-body#photos { background-color: #FCFAF0; }
-
-h1 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 700;
-	font-size: 2.75rem;
-	line-height: 1.3;
-}
-
-h2, h3, h4 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-}
-
-span.date {
-	/* font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; */
-	font-size: 1.25rem;
-	margin-left: 1rem;
-	color: #787672;
-}
-
-p {
-    max-width: 640px;
-		line-height: 1.75rem;
-}
-
-p.uk-text-lead {
-	max-width: 960px;
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-}
-
-.center-align {
-	text-align: center;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  line-height: 1.25rem;
+  color: #121212;
 }
 
 /*
 ======================================================
-LINKS & BUTTONS
+Fade-in
 ======================================================
 */
 
-a, a:visited { color: salmon; text-decoration: none; border-bottom: 1px solid transparent;
-	-moz-transition: 300ms;
-	transition: 300ms;
-}
-a:hover, a:active { color: salmon; text-decoration: none; border-bottom: 1px solid salmon; }
-.uk-light a, .uk-light a:visited { color: white; }
-
-a.uk-button {
-	color: #3D3C3A;
-  text-transform: none;
-  font-weight: 600;
-	font-size: 1rem;
-  padding: 0.75rem 2rem;
-  border-radius: 10rem;
-	border: 2px solid #3D3C3A;
-	-moz-transition: 300ms;
-	transition: 300ms;
+#logo {
+	-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 1.5s; /* Firefox < 16 */
+	-ms-animation: fadein 1.5s; /* Internet Explorer */
+	-o-animation: fadein 1.5s; /* Opera < 12.1 */
+	animation: fadein 1.5s;
 }
 
-a.uk-button:hover {
-	border: 2px solid salmon;
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 /*
 ======================================================
-LOGO & NAVIGATION
+Website standards
 ======================================================
 */
 
-.uk-navbar-left .uk-logo {
-	font-family: 'Muli', sans-serif;
-	font-weight: 900;
-	letter-spacing: .05rem;
-	text-transform: uppercase;
-	font-size: 1.125rem;
-}
-/* ensure logo is full opacity */
-.uk-light .uk-navbar-left .uk-logo {
-    color: #fff;
-}
-.uk-dark .uk-navbar-left .uk-logo {
-    color: #000;
+.no-break {
+	white-space: nowrap;
 }
 
 hr {
-	margin: 4rem 0;
+    margin: 0;
+    border-top: 1px solid #676767;
 }
 
-ul.uk-navbar-nav li a {
-	border: 0;
-	font-weight: 600;
+.center {
+  text-align: center;
 }
-ul.uk-navbar-nav li a:hover, .uk-navbar-left .uk-logo:hover { border: 0; }
 
-nav.uk-light ul.uk-navbar-nav li.current-page a {
-	color: #fff;
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
-nav.uk-dark ul.uk-navbar-nav li.current-page a {
-	color: #000;
+.cf:after {
+    clear: both;
+}
+
+a, a:visited { -moz-transition: 300ms; transition: 300ms; }
+
+p a, p a:visited {
+	color: #727272;
+	border-bottom: 1px solid #f1f1f1;
+}
+p a:hover {
+	color: #2a2a2a;
+	text-decoration: none;
+	border-bottom: 1px solid salmon/*#e6e600*/;
+}
+p a:active {
+	border-bottom: 1px solid violet;
+	color: violet;
+}
+
+/*
+======================================================
+Typography
+======================================================
+*/
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "niveau-grotesk",sans-serif;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 2.25rem;
+	text-align: center;
+	margin: 6rem 0 3rem 0;
+}
+
+h2 {
+	font-size: 1.375rem;
+	line-height: 1.75rem;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 1.875rem;
+	color: #727272;
+	max-width: 880px;
+	margin: 0 auto 1rem auto;
+}
+
+svg.heart {
+	fill: #727272;
+	position: relative;
+	top: 2px;
+}
+
+/*
+======================================================
+Introduction
+======================================================
+*/
+
+#splash {
+	height: 75vh;
+	background-color: #eee;
+}
+
+#introduction {
+	margin: 4rem auto 8rem auto;
+	width: 100%;
 }
 
 
 /*
 ======================================================
-VIDEO
+Galleries
 ======================================================
 */
 
-.video-container {
-	background-color: #3D3C3A;
-	/* background: url('../img/bgnd3.jpg'); */
-	background-size: cover;
-	background-repeat: no-repeat;
+.gallery {
+	position: relative;
+	width: 100%;
+	margin: 4rem auto;
 }
+
+.gallery a, .gallery a:visited {
+	opacity: 1;
+	background-color: #eee!important;
+}
+.gallery a:hover {
+	opacity: .72;
+}
+
+#gallery-paint, #gallery-sketch, #gallery-gamefarm, #gallery-commercial, #gallery-photos {
+	width: 100%;
+	float: left;
+}
+
+#gallery-paint a, #gallery-sketch a, #gallery-commercial a, #gallery-photos a {
+    width: calc(25% - 1px);
+    min-height: 340px;
+    display: inline-block;
+    float: left;
+    margin: 0 1px 1px 0;
+}
+
+#gallery-gamefarm a {
+    width: calc(33.3333% - 1px);
+    min-height: 340px;
+    display: inline-block;
+    float: left;
+    margin: 0 1px 1px 0;
+}
+
+#gallery-gamefarm a.featured-gallery-image {
+	width: calc(66.666% - 1px);
+}
+
+/*#gallery-paint a:nth-child(3n) {
+    margin-right: 0;
+}*/
+
+
+
 
 /*
 ======================================================
-SLIDESHOW
+Footer
 ======================================================
 */
-
-#slideshow {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-}
-
-ul.uk-slideshow-items {
-    height: 100vh!important;
-}
-
-/*prevents navigation from being pushed down on Audio page*/
-.uk-margin-large, .uk-margin-medium {margin-top: 0!important;}
-
-/*photo overlay on audio page*/
-.uk-overlay-primary {
-    background: rgba(34,34,34,.3);
-}
-
-/*
-======================================================
-AUDIO PLAYER
-======================================================
-*/
-
-audio {
-    display: block;
-    position: relative;
-    min-height: 54px;
-    width: 300px;
-		background: #F1F3F4;
-    border-radius: 4px;
-		margin: 2rem 0;
-}
-
-#playlist {
-    padding: 0;
-		margin-bottom: 2rem;
-    margin-left: 1.8rem;
-}
-
-#playlist li {
-    margin: 1rem 0;
-    /* border-top: 1px solid rgba(255, 255, 255, .5); */
-    padding: 0 0 0 .5rem;
-		max-width: 640px;
-}
-
-#playlist li.current-song {
-    list-style-type: none;
-		padding: 0;
-		position: relative;
-		left: -6px;
-}
-
-#playlist li.current-song:before {
-    content: "\25B6";
-    position: relative;
-    left: -1rem;
-}
-
-#playlist li a {
-    color: white;
-    text-decoration: none;
-    opacity: .5;
-    font-size: 1rem;
-    line-height: 2rem;
-	 -moz-transition: 300ms;
-    transition: 300ms;
-}
-
-#playlist li a:hover {
-    opacity: 1;
-}
-
-#playlist .current-song a {
-    opacity: 1;
-}
-
-/*
-======================================================
-IMPORTANT STRUCTURES
-======================================================
-*/
-
-#content {
-	min-height: calc(100vh - 13rem);
-}
 
 footer {
-	position: relative;
-	padding: 2.5rem;
-	margin-top: 5rem;
-	height: 3rem;
+	width: 100%;
+	margin: 0;
+	padding: 4rem 0;
+	text-align: center;
 }
 
 footer p {
-	text-align: center;
-	/* font-family: 'Playfair Display', serif; */
-	font-weight: 400;
-	font-size: .9rem;
-	max-width: none;
+	font-size: 1rem;
+}
+
+footer p.copyright {
+	font-size: .875rem;
+}
+
+
+
+/*
+======================================================
+Media queries
+======================================================
+*/
+
+
+@media (max-width: 768px) {
+
+	#introduction {
+		margin: 4rem auto;
+	}
+
+	#gallery-paint a, #gallery-sketch a, #gallery-commercial a, #gallery-photos a {
+	    width: calc(50% - 1px);
+	    min-height: 280px;
+	}
+
+	#gallery-gamefarm a, #gallery-gamefarm a.featured-gallery-image {
+	    width: calc(50% - 1px);
+	    min-height: 280px;
+	}
+
+}
+
+
+@media (max-width: 450px) {
+
+	#splash {
+		height: 300px;
+	}
+
+	#introduction {
+		margin-top: 1rem;
+	}
+
+	h1 { margin: 2rem 0; }
+
 }
