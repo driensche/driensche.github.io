@@ -12,14 +12,13 @@
 
 body {
 
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
+	background-color: #3D3C3A;
 	color: #333;
 }
 
 .box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+	margin: auto; 
+	padding: 3%;
 }
 
 .lightbox {
@@ -29,7 +28,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
+	/*background: rgba(10, 10, 10, 0.8);*/
 	text-align: center;
 	margin: auto;
 
@@ -46,6 +45,33 @@ div.vertical {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
+}
+
+input#password {
+    padding: .5rem;
+    font-size: 15px;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+button#loginbutton {
+	color: #FCFAF0;
+	background-color: #3D3C3A;
+	text-transform: none;
+	font-weight: 400;
+	font-size: .8rem;
+	padding: 0.7rem 1.7rem;
+	border-radius: 10rem;
+	border: 2px solid #FCFAF0;
+	-moz-transition: 300ms;
+	transition: 300ms;
+}
+
+button#loginbutton:hover {
+	border: 2px solid salmon;
+	cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
@@ -71,7 +97,7 @@ div.vertical {
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="Password" /> <br />
 					<button id="loginbutton" type="button">Enter</button>
 					<p id="wrongPassword" style="display: none">wrong password</p>
 				</div>
